@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -24,3 +26,51 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.header, .left-links, .right-links {
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.left-links, .right-links {
+  padding: 0;
+  gap: 16px;
+  margin: 16px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* Instead of justify-content center, can
+  also just apply a margin: auto */
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  background-color: #eeeeee;
+}
+
+
+
